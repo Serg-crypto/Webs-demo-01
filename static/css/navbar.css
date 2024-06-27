@@ -1,0 +1,151 @@
+/* 
+
+
+
+NAVBAR WEBSITE
+
+
+
+
+*/
+
+.nav-bar {
+  width: 100%;
+  height: 4.375rem;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: #73c2fb;
+}
+
+.img-logo {
+  width: 55px;
+}
+
+.nav-bar li a:link,
+.nav-bar li a:active {
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  /*font-weight: bold;*/
+}
+
+.nav-bar li a:hover {
+  color: #f1f5f2;
+}
+
+.login-div li a:link,
+.login-div li a:active {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.img-login {
+  pointer-events: none;
+  height: 1.25rem;
+  width: auto;
+}
+
+.img-menu-mobile {
+  height: 40px;
+  cursor: pointer;
+}
+
+/*
+
+
+
+
+
+NAVBAR MOBILE 
+
+
+
+
+*/
+
+/* Al icono de menu se le coloca display none porque será mostrado solo cuando el tamaño
+  de la pantalla sea el correspondiente a dispositivos mobiles */
+.menu-div {
+  display: none;
+}
+
+/* se le coloca display none porque será mostrado solo cuando el 
+      boton de menu para dispositivos mobiles sea oprimido por el usuario */
+
+.nav-side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.nav-side-bar li {
+  list-style: none;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-side-bar li:hover {
+  background-color: rgba(110, 187, 106, 0.8);
+}
+
+.nav-side-bar li a {
+  color: #181515;
+  font-size: 1.5rem;
+}
+
+.nav-side-bar li a:link,
+.nav-side-bar li a:active {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.exit-icon {
+  display: flex;
+  justify-content: center;
+  height: 55px;
+  width: auto;
+}
+
+/*
+
+
+
+
+MEDIAQUERIES PARA HACER APARECER EL MENU MOBILE Y DESAPARECER EL MENU DE WEBSITE
+EN PANTALLAS PEQUEÑAS
+
+
+
+
+*/
+@media (max-width: 760px) {
+  /* NAVBAR     */
+
+  /* desaparecer los links del navbar y el div login de usuario*/
+  .nav-bar li a:link {
+    display: none;
+  }
+  .login-div {
+    display: none;
+  }
+  /* Mostrar el icono de navegador para dispositivos mobiles*/
+  .menu-div {
+    display: flex;
+  }
+}

@@ -1,0 +1,38 @@
+
+
+
+
+<header>
+    <nav>   
+      <ul class="nav-bar">  
+        <li> 
+          <img class="img-logo" src="{{ url_for('static', filename='images/logo-main.svg') }}" alt="logo del sitio web" />
+        </li> 
+
+        <li><a href="#">Tienda</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Soporte</a></li>
+        <div class="login-div">
+          <img  class="img-login" src="{{ url_for('static', filename='images/user.svg') }}" />
+          <li><a href="#">Login</a></li>
+        </div>
+
+        <div class="menu-div" onclick=showSideBar()>
+            <img class="img-menu-mobile" src="{{ url_for('static', filename='images/burger-menu.svg') }}" alt="menu mobile"/>  
+        </div>
+      </ul>
+
+<!--   NAVBAR MOBILE      -->
+
+      <ul class="nav-side-bar">
+         
+        <li><a href="#">Tienda</a></li>
+        <li onclick="accesoNoticias()"><a href="#">Noticias</a></li>
+        <li><a href="#">Soporte</a></li>
+        <li onclick="accesoLogin()"><a href="#"">Login</a></li>
+        <li class="exit-icon" onclick=closeSideBar()>
+          <img src="{{ url_for('static', filename='images/close-menu-x-svg.svg') }}" alt="cerrar menu" />
+        </li> 
+      </ul>
+    </nav>
+  </header>
