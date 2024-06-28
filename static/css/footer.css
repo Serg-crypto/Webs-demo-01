@@ -21,17 +21,7 @@ footer {
 }
 
 .div-redes-sociales-footer a {
-  margin-left: 80px;
-}
-
-/*.div-redes-sociales-footer a {
-  cursor: pointer;
-  display: block;
-}
-  */
-
-.img-socials-footer {
-  width: 30px;
+  margin-left: 100px;
 }
 
 .img-logo-footer {
@@ -39,8 +29,11 @@ footer {
   display: block;
 }
 
+.img-socials-footer {
+  width: 30px;
+}
+
 .div-enlaces-footer {
-  color: #000;
   margin-top: 7px;
 }
 
@@ -49,15 +42,15 @@ footer {
 }
 
 .div-enlaces-footer h3 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
 }
 
-.estilo-boton-footer {
-  color: #000;
+.estilo-enlace-footer {
+  color: #000000;
   font-family: "Nunito", sans-serif;
-  font-size: 1.1rem;
+  font-weight: 600;
+  font-size: 1rem;
   text-decoration: none;
 }
 

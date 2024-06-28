@@ -1,9 +1,6 @@
 from flask import Flask, render_template, jsonify
-import sqlalchemy
 from info import datos
 
-
-#print(sqlalchemy.__version__)
 
 
 app = Flask(__name__)

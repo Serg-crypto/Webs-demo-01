@@ -22,6 +22,17 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='css/navbar.css') }}"
     />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/hero.css') }}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/section-pre-footer.css') }}"
+    />
+
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/footer.css') }}"
@@ -32,9 +43,16 @@
   <body>
     {% include 'nav.html' %}
 
-    <div class="container"></div>
+    <!--    -->
 
-    {% include 'footer.html' %}
+    {% include 'hero.html' %}
+
+    <!--    -->
+
+    {% include 'section-pre-footer.html' %}
+
+    <!--    -->
+    {% include 'footer.html'%}
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>

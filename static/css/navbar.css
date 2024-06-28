@@ -25,10 +25,12 @@ NAVBAR WEBSITE
   width: 55px;
 }
 
+/*Links principales del nav*/
 .nav-bar li a:link,
 .nav-bar li a:active {
-  color: #000;
+  color: #000000;
   font-family: "Nunito", sans-serif;
+  font-weight: 600;
   font-size: 1.2rem;
   text-decoration: none;
   /*font-weight: bold;*/
@@ -38,6 +40,7 @@ NAVBAR WEBSITE
   color: #f1f5f2;
 }
 
+/*Link del login*/
 .login-div li a:link,
 .login-div li a:active {
   cursor: pointer;
@@ -101,7 +104,7 @@ NAVBAR MOBILE
 }
 
 .nav-side-bar li:hover {
-  background-color: rgba(110, 187, 106, 0.8);
+  background-color: rgba(42, 132, 216, 0.8);
 }
 
 .nav-side-bar li a {
