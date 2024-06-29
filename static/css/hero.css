@@ -75,8 +75,10 @@
 }
 
 .btn-full-style {
-  background-color: #a1e887;
+  background-color: #3fff00;
 
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   margin-left: 1rem;
 }
 
@@ -109,6 +111,7 @@ Responsive
       display: grid;
       grid-template-columns: 1fr;
       align-items: center;
+      row-gap: 2px;
       grid-gap: 2rem;
     }
   }
@@ -132,6 +135,7 @@ Responsive
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 0.5fr;
     align-items: center;
+    margin-top: -8rem;
   }
 
   .full-column-img {
@@ -144,5 +148,20 @@ Responsive
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 10px;
+    padding: 0.7rem 1.4rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .heading-primary {
+    font-size: 1.8rem;
+  }
+  .heading-text {
+    font-size: 1rem;
   }
 }
