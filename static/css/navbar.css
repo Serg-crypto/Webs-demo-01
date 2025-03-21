@@ -36,6 +36,11 @@ NAVBAR WEBSITE
   /*font-weight: bold;*/
 }
 
+/*Prueba para transicion del hover en los enlaces*/
+.nav-bar li a {
+  transition: color 0.2s ease-in-out;
+}
+
 .nav-bar li a:hover {
   color: #f1f5f2;
 }
