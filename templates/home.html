@@ -30,6 +30,11 @@
 
     <link
       rel="stylesheet"
+      href="{{ url_for('static', filename='css/section-cards.css') }}"
+    />
+
+    <link
+      rel="stylesheet"
       href="{{ url_for('static', filename='css/section-pre-footer.css') }}"
     />
 
@@ -46,6 +51,10 @@
     <!--    -->
 
     {% include 'hero.html' %}
+
+    <!--    -->
+
+    {% include 'section-cards.html' %}
 
     <!--    -->
 
