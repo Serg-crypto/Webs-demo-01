@@ -108,9 +108,3 @@ footer {
     border-top: 1px solid rgba(0, 0, 0, 0.1); /* Opcional: línea separadora */
   }
 }
-
-@media (max-width: 450px) {
-  /*.div-redes-sociales-footer a {
-    margin-left: 20px;
-  }*/
-}
