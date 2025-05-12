@@ -10,12 +10,12 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .div-redes-sociales-footer {
   display: flex;
-  align-items: left;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
 }
@@ -24,13 +24,13 @@ footer {
   margin-left: 100px;
 }
 
-.img-logo-footer {
-  width: 35px;
-  display: block;
-}
-
 .img-socials-footer {
   width: 30px;
+  pointer-events: none;
+}
+
+.img-logo-footer {
+  width: 50px;
 }
 
 .div-enlaces-footer {
@@ -64,7 +64,7 @@ footer {
 
 
 
-  MEDIAQUERIES PARA HACER QUE EL FOOTER SE AJUSTE AL TAMAÑP DE LA PANTALLA
+  MEDIAQUERIES PARA HACER QUE EL FOOTER SE AJUSTE AL TAMAÑO DE LA PANTALLA
 
 
 
