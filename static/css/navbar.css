@@ -1,4 +1,4 @@
-/* 
+/*
 
 
 
@@ -37,13 +37,15 @@ NAVBAR WEBSITE
 }
 
 /*Prueba para transicion del hover en los enlaces*/
-.nav-bar li a {
+/* Esto estará comentado debido a que actualmente el efecto visual sufre de lag en producción*/
+/* .nav-bar li a {
   transition: color 0.2s ease-in-out;
 }
 
 .nav-bar li a:hover {
   color: #f1f5f2;
 }
+/*
 
 /*Link del login*/
 .login-div li a:link,
@@ -70,7 +72,7 @@ NAVBAR WEBSITE
 
 
 
-NAVBAR MOBILE 
+NAVBAR MOBILE
 
 
 
@@ -83,7 +85,7 @@ NAVBAR MOBILE
   display: none;
 }
 
-/* se le coloca display none porque será mostrado solo cuando el 
+/* se le coloca display none porque será mostrado solo cuando el
       boton de menu para dispositivos mobiles sea oprimido por el usuario */
 
 .nav-side-bar {
