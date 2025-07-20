@@ -1,2 +1,4 @@
-project_env
-__pycache__
+*env*
+*venv*
+__pycache__/
+*.pyc

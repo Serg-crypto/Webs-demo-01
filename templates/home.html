@@ -30,6 +30,11 @@
 
     <link
       rel="stylesheet"
+      href="{{ url_for('static', filename='css/ticker.css') }}"
+    />
+
+    <link
+      rel="stylesheet"
       href="{{ url_for('static', filename='css/section-cards.css') }}"
     />
 
@@ -51,6 +56,10 @@
     <!--    -->
 
     {% include 'hero.html' %}
+
+    <!--    -->
+
+    {% include 'ticker.html' %}
 
     <!--    -->
 
