@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify
 from info import datos
 
-
+# comando para correr en local: python app.py
 
 app = Flask(__name__)
 

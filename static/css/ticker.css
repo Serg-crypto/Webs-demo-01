@@ -2,8 +2,8 @@
 .ticker-container {
   width: 100%;
   background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
-  border-top: 3px solid #00d4ff;
-  border-bottom: 3px solid #00d4ff;
+  border-top: 3px solid #73c2fb;
+  border-bottom: 3px solid #73c2fb;
   overflow: hidden;
   position: relative;
   height: 80px;
