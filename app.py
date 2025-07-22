@@ -1,5 +1,5 @@
 from flask import Flask, render_template, jsonify
-from info import datos
+from info import datos, ASSETS, update_assets
 
 # comando para correr en local: python app.py
 
@@ -12,7 +12,8 @@ def show_json():
 
 @app.route('/')
 def home():
-    return render_template('home.html', company_name='Soller')
+    update_assets()
+    return render_template('home.html', company_name='Soller', assets=ASSETS)
 
 
 

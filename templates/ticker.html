@@ -3,23 +3,14 @@
 
   <div class="ticker-wrapper">
     <div class="ticker-content">
+      {% for asset_code, data in assets.items() %}
       <div class="ticker-item">
-        <div class="crypto-icon btc">₿</div>
-        <span class="crypto-symbol">BTC</span>
-        <span class="crypto-price">$67,234.56</span>
-        <span class="crypto-change positive">+2.34%</span>
+        <span class="crypto-symbol">{{ data.name }}</span>
+        <span class="crypto-price">${{ data.price}}</span>
       </div>
 
       <div class="separator">|</div>
-
-      <div class="ticker-item" data-crypto="ETH">
-        <div class="crypto-icon eth">Ξ</div>
-        <span class="crypto-symbol">ETH</span>
-        <span class="crypto-price">$3,456.78</span>
-        <span class="crypto-change negative">-1.23%</span>
-      </div>
-
-      <div class="separator">|</div>
+      {% endfor %}
 
       <div class="ticker-item">
         <div class="crypto-icon bnb">BNB</div>
@@ -76,23 +67,14 @@
       <div class="separator">|</div>
 
       <!-- Duplicamos el contenido para loop seamless -->
-      <div class="ticker-item" data-crypto="BTC">
-        <div class="crypto-icon btc">₿</div>
-        <span class="crypto-symbol">BTC</span>
-        <span class="crypto-price">$67,234.56</span>
-        <span class="crypto-change positive">+2.34%</span>
+      {% for asset_code, data in assets.items() %}
+      <div class="ticker-item">
+        <span class="crypto-symbol">{{ data.name }}</span>
+        <span class="crypto-price">${{ data.price}}</span>
       </div>
 
       <div class="separator">|</div>
-
-      <div class="ticker-item" data-crypto="ETH">
-        <div class="crypto-icon eth">Ξ</div>
-        <span class="crypto-symbol">ETH</span>
-        <span class="crypto-price">$3,456.78</span>
-        <span class="crypto-change negative">-1.23%</span>
-      </div>
-
-      <div class="separator">|</div>
+      {% endfor %}
 
       <div class="ticker-item">
         <div class="crypto-icon bnb">BNB</div>
